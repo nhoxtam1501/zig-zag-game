@@ -39,6 +39,7 @@ public class BallController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        
         if (!started)
         {
             if (Input.GetMouseButtonDown(0))
@@ -63,7 +64,8 @@ public class BallController : MonoBehaviour
     }
 
     void switchDirection()
-    {
+    {   
+        
         if (rb.velocity.z > 0)
         {
             rb.velocity = new Vector3(speed, 0, 0);
@@ -72,7 +74,7 @@ public class BallController : MonoBehaviour
         {
             rb.velocity = new Vector3(0, 0, speed);
         }
-
+     
 
     }
 
